@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanya Mohan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <style>
+     /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fc;
+    color: #333;
+}
+
+/* Centered Name and Subtitle */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0056b3;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100vh; /* Full height to center vertically */
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column; /* Make items vertical */
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #0056b3;
+}
+
+
+/* Sections - Styling */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #444;
+    border-bottom: 2px solid #0056b3;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About */
+.lava-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Skills */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Common Box Style for Skills, Activity, Certifications, and Blogs */
+.skills ul,
+.activity ul,
+.certificates ul,
+.blogs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li,
+.activity li,
+.certificates li,
+.blogs li {
+    background: #e3f2fd;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Certifications Section */
+.certificates ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certificates li {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Fix for Blog Section */
+.blogs ul {
+    padding: 0;
+}
+
+.blogs li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    background: #e3f2fd;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+
+/* View More Button */
+.view-more-btn {
+    display: block;
+    text-align: center;
+    background: #5c92cc;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.view-more-btn:hover {
+    background: #1c2e42;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    margin-top: 15px;
+    background: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #003366;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.social-icons i {
+    margin-right: 3px;
+    font-size: 15px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Social Media Specific Styles */
+.instagram {
+    background: #E1306C;
+}
+
+.linkedin {
+    background: #0077B5;
+}
+
+.wordpress {
+    background: #21759B;
+}
+
+.github {
+    background: #333;
+}
+
+/* Hover Effect */
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e3f2fd;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+  </style>
+    <div id="root"></div>
+    <div class="showcase">
+        <header>
+            <nav class="navbar">
+                <div class="nav-container">
+                    <h1 class="title">LAVANYA MOHAN</h1>
+                    <h4 class="subtitle">Explorer of Code & Creativity</h4>
+
+                    <a href="#about" class="nav-item">About Me</a>
+                    <a href="#skills" class="nav-item">Skills</a>
+                    <a href="#activity" class="nav-item">Activity</a>
+                    <a href="#certificates" class="nav-item">Certifications</a>
+                    <a href="#blogs" class="nav-item">Blogs/Writings</a>
+                    <a href="#resume" class="nav-item">Resume</a>
+                    <a href="#contact" class="nav-item">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <div class="lava-content">
+                <h1>Hi, I am Lavanya. A tech enthusiast and creative explorer.</h1>
+                <p>Passionate about development, open source, and artistic expression. I am learning and growing in multiple domains - software development, open-source contribution, and creative arts.</p>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Front-end development: HTML, CSS, JS (Beginner)</li>
+                <li>Python (Learner)</li>
+                <li>Tools & Platforms: Git, GitHub, Docker (Basic Knowledge)</li>
+                <li>Open Source Contributor, Adaptability & Learning</li>
+                <li>Skilled in photography, blending art with real-life elements.</li>
+            </ul>
+        </section>
+
+        <section class="activity" id="activity">
+            <h2>Activity</h2>
+            <ul>
+                <li>Working on Mini Projects in Python at Intern.</li>
+                <li>Participated in Hacktoberfest 2024.</li>
+                <li>Problem Solving on Leetcode</li>
+                <li>Open Source Contributor, I have been contributing to Tamil Wikisource and made 200+ edits!</li>
+            </ul>
+        </section>
+
+        <section class="certificates" id="certificates">
+            <h2>Certifications</h2>
+            <ul>
+                <li>
+                    <a href="https://www.guvi.in/share-certificate/61H7LC019dz9sT8861" target="_blank">Machine Learning - Guvi</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1hi4BR8mSH8VpvYreVU8C__ubNGQ4IOsE/view?usp=drivesdk" target="_blank">Intern Certificate at Codsoft</a>
+                </li>
+                <li>
+                    <a href="https://www.holopin.io/hacktoberfest2024/userbadge/cm3b3hmma82720cldsh9bkzmn" target="_blank">Hacktoberfest Participation</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1hiEuylAxtNTF4Ffiow-EOJ7gh-f9ulHQ/view?usp=drivesdk" target="_blank">MERN Stack - Novi Tech</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1KzzChEG17qx_acZvvwY3OE6iZl0Kf6Eb/view?usp=drivesdk" target="_blank">Journey to Cloud</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="blogs" id="blogs">
+            <h2>Blogs/Writings</h2>
+            <ul>
+                <li><a href="https://lavanyamohan7.wordpress.com/2024/12/31/reflecting-on-2024-%e2%9c%a8/" target="_blank">Reflection on 2024</a></li>
+                <li><a href="https://lavanyamohan7.wordpress.com/2025/02/06/a-new-experience-a-day-of-unexpected-respect/" target="_blank">A Day of Unexpected Things</a></li>
+                <li><a href="https://lavanyamohan7.wordpress.com/2025/02/09/hobbies-the-best-love-affair-ill-ever-have/" target="_blank">The Best Love</a></li>
+            </ul>
+            <a href="http://lavanyamohan7.wordpress.com" target="_blank">For More Blogs..Click here</a>
+        </section>
+
+        <section class="resume" id="resume">
+            <h2>Resume</h2>
+            <p>Click below to view or download my resume:</p>
+            <a href="https://drive.google.com/file/d/1hs_Rscd3Ebia8pkDofvbNmsbkTQRYmL3/view?usp=drivesdk" target="_blank">View / Download Resume</a>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:lavanyamohan253@gmail.com">lavanyamohan253@gmail.com</a></p>
+            <p>Phone: 7845771925</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/lavanyamohan5" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/charlies_randm7" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/lavanyamohan007" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="http://lavanyamohan7.wordpress.com" target="_blank"><i class="fab fa-wordpress"></i> WordPress</a>
+            </div>
+
+            <form action="https://formspree.io/f/xnnjlzbo" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2025 Lavanya Mohan | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
